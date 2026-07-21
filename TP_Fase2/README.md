@@ -30,7 +30,7 @@ Foi ainda adicionada uma nova primitiva gráfica — o **anel (ring)** — usada
 - Construção de cenas hierárquicas com grupos aninhados
 - Geração da primitiva **ring** (anel), com raio interior, raio exterior e número de fatias
 - Alternância entre câmara orbital (Explorer) e câmara FPS (tecla `E` / `F`)
-- Cena de demonstração de um **Sistema Solar** com Sol, planetas, Lua e anel de Saturno
+- Cena de demonstração de um **Sistema Solar** com sol, planetas, lua e anel de Saturno
 
 ## Estrutura do Projeto
 
