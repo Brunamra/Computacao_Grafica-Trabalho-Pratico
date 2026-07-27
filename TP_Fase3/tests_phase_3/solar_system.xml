@@ -1,0 +1,166 @@
+<world> <!-- a world can have a camera, a window definition, and a single group -->
+    <window width="1024" height="1024" />
+    <camera> 
+	    <position x="100" y="3" z="100" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> <!-- optional, use these values as default-->
+        <projection fov="60" near="1" far="1000" /> <!-- optional, use these values as default-->
+    </camera>
+
+    <group>
+        <!-- SOL -->
+        <group>
+            <transform>
+                <scale x="20" y="20" z="20" />
+            </transform>
+            <models> 
+                <model file="planet.3d" /> 
+            </models>
+        </group>
+        <!-- MERCURIO -->
+        <group>
+            <transform>
+                <rotate time="1" x="0" y="1" z="0" />
+                <translate x="25.8" y="0" z="0" />
+                <scale x="0.245" y="0.245" z="0.245" />
+            </transform>
+            <models> 
+                <model file="planet.3d" /> 
+            </models>
+        </group>
+        
+        <!-- VENUS -->
+        <group>
+            <transform>
+                <rotate time="2.24" x="0" y="1" z="0" />
+                <translate x="30.8" y="0" z="0" />
+                <scale x="0.605" y="0.605" z="0.605" />
+            </transform>
+            <models> 
+                <model file="planet.3d" /> 
+            </models>
+        </group>
+        <!-- TERRA  -->
+        <group>
+            <transform>
+                <rotate time="3.65" x="0" y="1" z="0" />
+                <translate x="34.9" y="0" z="0" />
+            </transform>
+            <group>
+                <transform>
+                    <scale x="0.635" y="0.635" z="0.635" />
+                </transform>
+                <models> 
+                    <model file="planet.3d" /> 
+                </models>
+            </group>
+            <!-- LUA  -->
+            <group>
+                <transform>
+                    <rotate time="0.5" x="0" y="1" z="0" />
+                    <translate x="0.554" y="0.554" z="0.554" />
+                    <scale x="0.17" y="0.17" z="0.17" />
+                </transform>
+                <models> 
+                    <model file="planet.3d" />
+                </models>
+            </group>
+        </group>  
+         <!-- MARTE -->
+        <group>
+            <transform>
+                <rotate time="6.86" x="0" y="1" z="0" />
+                <translate x="42.8" y="0" z="0" />
+                <scale x="0.34" y="0.34" z="0.34" />
+            </transform>
+            <models> 
+                <model file="planet.3d" /> 
+            </models>
+        </group>
+        <!-- JUPITER -->
+        <group>
+            <transform>
+                <rotate time="11.86" x="0" y="1" z="0" />
+                <translate x="55.8" y="0" z="0" />
+                <scale x="6.99" y="6.99" z="6.99" />
+            </transform>
+            <models> 
+                <model file="planet.3d" /> 
+            </models>
+        </group>
+        <!-- SATURNO -->
+        <group>
+            <transform>
+                <rotate time="16.46" x="0" y="1" z="0" />
+                <translate x="75.3" y="0" z="0" />
+            </transform>
+            <group>
+                <transform>
+                    <scale x="5.825" y="5.825" z="5.825" />
+                </transform>
+                <models> 
+                    <model file="planet.3d" />
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <rotate angle="30" x="1" y ="0" z = "0" />
+                </transform>
+                <models>
+                    <model file="ring.3d" /> <!-- generator ring 6.5 8 20 ring.3d -->
+                </models>
+            </group>
+        </group>
+        <!-- URANO -->
+        <group>
+            <transform>
+                <rotate time="25" x="0" y="1" z="0" />
+                <translate x="100.7" y="0" z="0" />
+                <scale x="2.535" y="2.535" z="2.535" />
+            </transform>
+            <models> 
+                <model file="planet.3d" /> 
+            </models>
+        </group>
+        <!-- NEPTUNO -->
+        <group>
+            <transform>
+                <rotate time="40" x="0" y="1" z="0" />
+                <translate x="125.3" y="0" z="0" />
+                <scale x="2.465" y="2.465" z="2.465" />
+            </transform>
+            <models> 
+                <model file="planet.3d" /> 
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="20" y="0" z="0" />
+            </transform>
+        <group>
+			<transform>
+                <rotate angle="10" x="0" y="0" z="1" />
+				<translate time = "15" align="true"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+					<point x = "0" y = "0" z = "50" />
+					<point x = "25" y = "0" z = "43.3" />
+					<point x = "43.3" y = "0" z = "25" />
+					<point x = "60" y = "0" z = "0" />
+					<point x = "43.3" y = "0" z = "-25" />
+					<point x = "25" y = "0" z = "-43.3" />
+					<point x = "0" y = "0" z = "-50" />
+					<point x = "-25" y = "0" z = "-43.3" />
+					<point x = "-43.3" y = "0" z = "-25" />
+					<point x = "-60" y = "0" z = "0" />
+					<point x = "-43.3" y = "0" z = "25" />
+					<point x = "-25" y = "0" z = "43.3" />
+				</translate>
+				<rotate angle="-90" x="1" y="0" z="0" />
+				<scale x="0.5" y="0.5" z="0.5" />
+			</transform>
+			<models> 
+				<model file="bezier_10.3d" /> <!-- generator patch teapot.patch 10 bezier_10.3d -->
+			</models>
+		</group>  
+        </group>
+    </group>
+</world>
