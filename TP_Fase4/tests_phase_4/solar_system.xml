@@ -1,0 +1,265 @@
+<world> <!-- a world can have a camera, a window definition, and a single group -->
+    <window width="1024" height="1024" />
+    <camera> 
+	    <position x="100" y="3" z="100" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> <!-- optional, use these values as default-->
+        <projection fov="60" near="1" far="1000" /> <!-- optional, use these values as default-->
+    </camera>
+
+    <lights> 
+		<light type="point" posx="0" posy="0" posz="0" />
+	</lights>
+
+    <group>
+        <!-- SOL -->
+        <group>
+            <transform>
+                <scale x="20" y="20" z="20" />
+            </transform>
+            <models> 
+                <model file="planet.3d">
+                    <color>
+						<diffuse R="253" G="184" B="19" />
+						<ambient R="0" G="8" B="18" />
+						<specular R="254" G="254" B="254" />
+						<emissive R="253" G="184" B="19" />
+						<shininess value="128" />
+					</color>
+                    <texture file = "../textures/2k_sun.jpg" />
+                </model> 
+            </models>
+        </group>
+        <!-- MERCURIO -->
+        <group>
+            <transform>
+                <rotate time="1" x="0" y="1" z="0" />
+                <translate x="25.8" y="0" z="0" />
+                <scale x="1" y="1" z="1" />
+            </transform>
+            <models> 
+                <model file="planet.3d">
+                    <texture file = "../textures/2k_mercury.jpg" />
+                    <color>
+						<diffuse R="226" G="188" B="139" />
+						<ambient R="0" G="8" B="18" />
+						<specular R="254" G="254" B="254" />
+						<emissive R="0" G="0" B="0" />
+						<shininess value="128" />
+					</color>
+                </model> 
+            </models>
+        </group>
+        
+        <!-- VENUS -->
+        <group>
+            <transform>
+                <rotate time="2.24" x="0" y="1" z="0" />
+                <translate x="30.8" y="0" z="0" />
+                <scale x="2" y="2" z="2" />
+            </transform>
+            <models> 
+                <model file="planet.3d">
+                    <texture file = "../textures/2k_venus.jpg" />
+                    <color>
+						<diffuse R="142" G="79" B="21" />
+						<ambient R="0" G="8" B="18" />
+						<specular R="254" G="254" B="254" />
+						<emissive R="0" G="0" B="0" />
+						<shininess value="128" />
+					</color>
+                </model>  
+            </models>
+        </group>
+        <!-- TERRA  -->
+        <group>
+            <transform>
+                <rotate time="3.65" x="0" y="1" z="0" />
+                <translate x="34.9" y="0" z="0" />
+            </transform>
+            <group>
+                <transform>
+                    <scale x="2" y="2" z="2" />
+                </transform>
+                <models>
+                    <model file="planet.3d">
+                        <texture file = "../textures/2k_earth.jpg" />
+                        <color>
+                            <diffuse R="58" G="108" B="151" />
+                            <ambient R="0" G="8" B="18" />
+                            <specular R="254" G="254" B="254" />
+                            <emissive R="0" G="0" B="0" />
+                            <shininess value="128" />
+                        </color>
+                    </model>
+                </models> 
+            </group>
+            <!-- LUA  -->
+            <group>
+                <transform>
+                    <rotate time="0.5" x="0" y="1" z="0" />
+                    <translate x="2.554" y="2.554" z="2.554" />
+                    <scale x="1" y="1" z="1" />
+                </transform>
+                <models> 
+                    <model file="planet.3d">
+                        <texture file = "../textures/2k_moon.jpg" />
+                        <color>
+                            <diffuse R="169" G="173" B="173" />
+                            <ambient R="0" G="8" B="18" />
+                            <specular R="254" G="254" B="254" />
+                            <emissive R="0" G="0" B="0" />
+                            <shininess value="128" />
+                        </color>
+                    </model> 
+                </models>
+            </group>
+        </group>  
+         <!-- MARTE -->
+        <group>
+            <transform>
+                <rotate time="6.86" x="0" y="1" z="0" />
+                <translate x="42.8" y="0" z="0" />
+                <scale x="1.5" y="1.5" z="1.5" />
+            </transform>
+            <models> 
+                <model file="planet.3d">
+                    <texture file = "../textures/2k_mars.jpg" />
+                    <color>
+                        <diffuse R="208" G="132" B="84" />
+                        <ambient R="0" G="8" B="18" />
+                        <specular R="254" G="254" B="254" />
+                        <emissive R="0" G="0" B="0" />
+                        <shininess value="128" />
+                    </color>
+                </model> 
+            </models>
+        </group>
+        <!-- JUPITER -->
+        <group>
+            <transform>
+                <rotate time="11.86" x="0" y="1" z="0" />
+                <translate x="55.8" y="0" z="0" />
+                <scale x="6.99" y="6.99" z="6.99" />
+            </transform>
+            <models> 
+                <model file="planet.3d">
+                    <texture file = "../textures/2k_jupiter.jpg" />
+                    <color>
+                        <diffuse R="148" G="122" B="94" />
+                        <ambient R="0" G="8" B="18" />
+                        <specular R="254" G="254" B="254" />
+                        <emissive R="0" G="0" B="0" />
+                        <shininess value="128" />
+                    </color>
+                </model> 
+            </models>
+        </group>
+        <!-- SATURNO -->
+        <group>
+            <transform>
+                <rotate time="16.46" x="0" y="1" z="0" />
+                <translate x="75.3" y="0" z="0" />
+            </transform>
+            <group>
+                <transform>
+                    <scale x="5.825" y="5.825" z="5.825" />
+                </transform>
+                <models> 
+                    <model file="planet.3d">
+                        <texture file = "../textures/2k_saturn.jpg" />
+                        <color>
+                            <diffuse R="206" G="175" B="155" />
+                            <ambient R="0" G="8" B="18" />
+                            <specular R="254" G="254" B="254" />
+                            <emissive R="0" G="0" B="0" />
+                            <shininess value="128" />
+                        </color>
+                    </model> 
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <rotate angle="30" x="1" y ="0" z = "0" />
+                </transform>
+                <models>
+                    <!-- generator ring 6.5 8 20 ring.3d -->
+                    <model file="ring.3d">
+                        <texture file = "../textures/saturn_ring_color.jpg" />
+                    </model> 
+                </models>
+            </group>
+        </group>
+        <!-- URANO -->
+        <group>
+            <transform>
+                <rotate time="25" x="0" y="1" z="0" />
+                <translate x="100.7" y="0" z="0" />
+                <scale x="2.535" y="2.535" z="2.535" />
+            </transform>
+            <models> 
+                <model file="planet.3d">
+                    <texture file = "../textures/2k_uranus.jpg" />
+                    <color>
+                        <diffuse R="157" G="185" B="197" />
+                        <ambient R="0" G="8" B="18" />
+                        <specular R="254" G="254" B="254" />
+                        <emissive R="0" G="0" B="0" />
+                        <shininess value="128" />
+                    </color>
+                </model> 
+            </models>
+        </group>
+        <!-- NEPTUNO -->
+        <group>
+            <transform>
+                <rotate time="40" x="0" y="1" z="0" />
+                <translate x="125.3" y="0" z="0" />
+                <scale x="2.465" y="2.465" z="2.465" />
+            </transform>
+            <models> 
+                <model file="planet.3d">
+                    <texture file = "../textures/2k_neptune.jpg" />
+                    <color>
+                        <diffuse R="95" G="126" B="218" />
+                        <ambient R="0" G="8" B="18" />
+                        <specular R="254" G="254" B="254" />
+                        <emissive R="0" G="0" B="0" />
+                        <shininess value="128" />
+                    </color>
+                </model> 
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="20" y="0" z="0" />
+            </transform>
+            <group>
+                <transform>
+                    <rotate angle="10" x="0" y="0" z="1" />
+                    <translate time = "15" align="true"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                        <point x = "0" y = "0" z = "50" />
+                        <point x = "25" y = "0" z = "43.3" />
+                        <point x = "43.3" y = "0" z = "25" />
+                        <point x = "60" y = "0" z = "0" />
+                        <point x = "43.3" y = "0" z = "-25" />
+                        <point x = "25" y = "0" z = "-43.3" />
+                        <point x = "0" y = "0" z = "-50" />
+                        <point x = "-25" y = "0" z = "-43.3" />
+                        <point x = "-43.3" y = "0" z = "-25" />
+                        <point x = "-60" y = "0" z = "0" />
+                        <point x = "-43.3" y = "0" z = "25" />
+                        <point x = "-25" y = "0" z = "43.3" />
+                    </translate>
+                    <rotate angle="-90" x="1" y="0" z="0" />
+                    <scale x="0.5" y="0.5" z="0.5" />
+                </transform>
+                <models> 
+                    <model file="bezier_10.3d" > <!-- generator patch teapot.patch 10 bezier_10.3d -->
+					    <texture file = "../textures/teapot.jpg" />
+				    </model>
+                </models>
+            </group>  
+        </group>
+    </group>
+</world>
