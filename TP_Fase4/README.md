@@ -4,7 +4,7 @@ Esta é a última fase do projeto de Computação Gráfica. O objetivo foi torna
 
 ---
 
-## O que mudou em relação à Fase 3
+## Novidades face à Fase 3
 
 - O ficheiro `.3d` gerado pelo `generator` passou a guardar, para cada vértice, três blocos de informação em vez de um só:
   1. Coordenadas do ponto
