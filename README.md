@@ -15,9 +15,9 @@ Esta separação dá origem ao pipeline usado ao longo de todas as fases:
 
 ```
 generator  →  ficheiros .3d (geometria: pontos + normais + coordenadas de textura)
-                      │
+                      
 cena.xml   →  descreve janela, câmara, luzes e a árvore de grupos
-                      │
+                      
 engine     →  lê o XML, carrega os .3d referenciados e renderiza a cena
 ```
 
