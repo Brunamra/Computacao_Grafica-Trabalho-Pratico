@@ -56,7 +56,7 @@ O projeto está organizado em dois programas:
 | `f` | Câmara em modo FPS |
 | Botão direito do rato | Menu FILL / LINE / POINT |
 
-**Elaborado por** 
+## Elaborado por: 
 - Bruna Micaela Rodrigues Araújo (a84914)
 - Hugo Alexandre Peres Ferreira (a100082)
 - Nuno Filipe Norberto Gonçalves de Oliveira (a53971)
